@@ -1,4 +1,3 @@
-@import "base/varibles";
 *{
     font-family: 'Museo Sans 100 Thin';
 }
@@ -19,10 +18,11 @@
 //     box-sizing: border-box;
 //     padding: 0;
 // }
-
-@import"block/advantages";
+@import "base/varibles";
+@import "block/registr";
+@import "block/advantages";
 @import "block/header.scss";
 @import "block/promo";
 @import "block/buttons";
 @import "base/mixins";
-@import "media";
+@import "media/media";
