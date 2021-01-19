@@ -8,6 +8,7 @@
     font-weight: 500;
     text-align: center;
     border: none;
+    outline: none;
     text-transform: uppercase;
     // font-family: Museo Sans 100 Thin;
     &_main{
@@ -17,10 +18,14 @@
         margin-top: 67px;
         margin-bottom: 18px;
     }
-    &_registr{
+    &_submit{
         width: 300px;
         height: 55px;
         font-size: 16px;
-        
+    }
+    &__catalog{
+        display: inline-block;
+        width: 131px;
+        height: 40px;
     }
 }

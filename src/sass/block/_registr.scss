@@ -1,10 +1,10 @@
 .registr{
-    background: url(../../pichures/bg/free-constult-bg.png) center (center/cover) no-repeat;
+    background: url(../pichures/bg/free-constult-bg.png) center (center/cover) no-repeat;
     min-height: 680px;
     padding: 100px 0 92px 0;
     &__header{
         color: #ffffff;
-        font-size: 36px;
+        font-size: 37px;
         font-weight: 600;
         text-align: left;
         text-transform: uppercase;
@@ -12,21 +12,8 @@
     &__subheader{
         margin-top: 80px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 21px;
         font-weight: 400;
         text-align: left;
-    }
-    &__wrapper{
-        flex-direction: column;
-        display: flex;
-        margin-top: 36px;
-        input{
-            margin-bottom: 15px;
-            width: 300px;
-            height: 50px;
-            border-radius: 5px;
-            background-color: #ffffff;
-            text-indent: 20px;
-        }
     }
 }

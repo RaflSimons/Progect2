@@ -1,0 +1,109 @@
+.catalog{
+    padding: 108px 0 103px 0;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        margin-top: 69px;
+        align-items: center;
+    }
+    &__tab{
+        margin-right: 5px;
+        border: 2px solid #6b6b6b;
+        width: 220px;
+        outline: none;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        color: #6b6b6b;
+        font-size: 19px;
+        font-weight: 400;
+        transform: skew(-28deg,0deg);
+        line-height: 48px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 3px 3px 20px $maincolor;
+            border: none;
+        }
+        div{
+            transform: skew(28deg,0deg);
+        }
+        &_active{
+            color: #ffffff;
+            background-color: #c70101;
+            border: none;
+        }
+    }
+    .catalog{
+        &__content{
+            padding: 59px 0 103px 0;
+        }
+    }
+    .catalog-item{
+        border: 2px solid #e8e8e8;
+        width: 300px;
+        min-height: 440px;
+
+        img{
+            margin-top: 20px;
+            width: 140px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__header{
+            margin-top: 20px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+        &__descr{
+            margin-top: 16px;
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+        &__detals{
+            text-align: center;
+            margin-top: 17px;
+            margin-bottom: 19px;
+            a{
+                color: #c70101;
+                font-size: 14px;
+                font-weight: 700;
+                text-decoration: underline;
+            }  
+        }
+        hr{
+            width: 260px;
+            height: 1px;
+            background-color: #e8e8e8;
+            margin: 0;
+        }
+        &__footer{
+            padding: 21px 20px 26px 19px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__prices{
+            text-align: left;
+            width: 100px;
+            &__discont{
+                color: #555555;
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: line-through;
+            }
+            &__stock-prices{
+                color: #050505;
+                font-size: 20px;
+                font-weight: 800;
+            }
+        }
+    }
+}

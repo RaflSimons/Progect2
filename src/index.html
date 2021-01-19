@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="promo">
@@ -50,7 +50,7 @@
 
     <div class="advantages">
         <div class="container">
-            <h2 class="advantages__header">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__item">
                     <img src="pichures/icons/cup.png" alt="cup">
@@ -75,13 +75,61 @@
         <div class="container">
             <h2 class="registr__header">Получите бесплатную консультацию <br> по подбору пульсометра </h2>
             <div class="registr__subheader">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут</div>
-            <div class="registr__wrapper">
-                <input class="registr__input-name"   placeholder="Ваше имя"    type="text">
-                <input class="registr__input-phone"  placeholder="Ваш телефон" type="text">
-                <input class="registr__input-emaill" placeholder="Ваш E-mail"  type="email">
-            </div>
-            <button class="button button_registr">заказать кОНСУЛЬТАЦИЮ</button>
+            <form class="form-feed">
+                <input required class="registr__input-name"   placeholder="Ваше имя"    type="text">
+                <input required class="registr__input-phone"  placeholder="Ваш телефон" type="number">
+                <input required class="registr__input-emaill" placeholder="Ваш E-mail"  type="email">
+                <button type="submit" class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
     </div>
+
+
+    <section class="carusel">
+        <div class="container">
+            <div class="carusel__inner">
+                <div class="carusel__line">
+                    <img src="pichures/img/carusel-phone1.png" alt="">
+                    <img src="pichures/img/carusel-photo2.png" alt="">
+                    <img src="pichures/img/carusel-photo3.png" alt="">
+                </div>
+            </div>
+            <button class="carusel__prev"><img src="pichures/icons/chevron-solid.svg" alt=""></button>
+            <button class="carusel__next"><img src="pichures/icons/chevron-solid.svg" alt=""></button>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="title">Каталог пульсометров</div>
+            <ul class="catalog__tabs">
+                <ol class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></ol>
+                <ol class="catalog__tab"><div>для бега</div></ol>
+                <ol class="catalog__tab"><div>для триатлона</div></ol>
+            </ul>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="pichures/img/pulsometr.png" class="catalog-item__photo" alt="metg">
+                    <div class="catalog-item__header">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, <br> основанных на сердечном ритме                    </div>
+                    <div class="catalog-item__detals"><a href="#">ПОДРОБНЕЕ</a></div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__prices__discont">4 750 руб.</div>
+                            <div class="catalog-item__prices__stock-prices">4 500 руб.</div>
+                        </div>
+                        
+                        <button class="button button_catalog">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__conten"></div>
+            <div class="catalog__conten"></div>
+        </div>
+    </section>
+
+    <script src="js/test.js"></script>
+    <script src="js/control.js"></script>
+
 </body>
 </html>
