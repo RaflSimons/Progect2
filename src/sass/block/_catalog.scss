@@ -38,20 +38,29 @@
     .catalog{
         &__content{
             padding: 59px 0 103px 0;
+            display: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &_active{
+                display: flex;
+            }
         }
     }
     .catalog-item{
         border: 2px solid #e8e8e8;
         width: 300px;
         min-height: 440px;
-
+        overflow: hidden;
+        transition: 0.5 all;
+        margin-bottom: 20px;
         img{
             margin-top: 20px;
-            width: 140px;
+            max-width: 140px;
             height: 200px;
             display: block;
             margin-left: auto;
             margin-right: auto;
+
         }
         &__header{
             margin-top: 20px;
@@ -71,9 +80,11 @@
             text-align: center;
             margin-top: 17px;
             margin-bottom: 19px;
+            transition: 0.5 all;
             a{
                 color: #c70101;
                 font-size: 14px;
+                transition: 0.5 all;
                 font-weight: 700;
                 text-decoration: underline;
             }  
@@ -82,7 +93,7 @@
             width: 260px;
             height: 1px;
             background-color: #e8e8e8;
-            margin: 0;
+            margin: 0 auto;
         }
         &__footer{
             padding: 21px 20px 26px 19px;
@@ -105,5 +116,51 @@
                 font-weight: 800;
             }
         }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5 all;
+            &_active{
+                margin-right: 20px;
+                transform: translateX(0%);
+            }
+        }
+        &__list{
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            transition: 0.5 all;
+            margin-left: 0;
+            margin-right: 0;
+            &_active{
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li{
+                margin-bottom: 20px;
+                color: #555555;
+                font-size: 14px;
+                font-weight: 400;                    
+                text-align: left;
+            }
+        }    
+        &__back{
+            margin-top: 84px;
+            color: #c70101;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 257px;
+        }  
     }
 }
