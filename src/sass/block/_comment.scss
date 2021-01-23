@@ -1,0 +1,31 @@
+.comment{
+    margin-bottom: 71px;
+    &__item{
+        margin-top: 100px;
+        display: flex;
+        img{
+            float: left;
+            width: 169px;
+            height: 169px;
+        }
+    }
+    &__name{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__status{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__descr{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__text{
+        margin-left: 62px;
+        padding-right: 60px;
+    }
+}
