@@ -1,0 +1,47 @@
+.footer{
+    padding: 50px 0 60px 0;
+    height: 630px;
+    position: relative;
+    &__info{
+        width: 460px;
+        height: 270px;
+        background: #C70101;  
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    &__wrapper{
+        margin-top: 56px;
+        display:flex;
+        justify-content: center;
+        img{
+            border: solid 2px white;
+            border-radius: 100%;
+            width: 53px;
+            height: 52px;
+            padding: 4px;
+            margin-right: 27px;
+            :not(last-child){
+                margin-right: 27px;
+            }
+        }
+    }
+    &__adress{
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__num-phone{
+        margin-top: 36px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
