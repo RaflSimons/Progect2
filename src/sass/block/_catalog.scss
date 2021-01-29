@@ -39,7 +39,6 @@
         &__content{
             padding: 59px 0 103px 0;
             display: none;
-            justify-content: space-between;
             flex-wrap: wrap;
             &_active{
                 display: flex;
@@ -53,6 +52,7 @@
         overflow: hidden;
         transition: 0.5 all;
         margin-bottom: 20px;
+        margin-right: 20px;
         img{
             margin-top: 20px;
             max-width: 140px;
